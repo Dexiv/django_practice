@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Картошки</title>
+</head>
+<body>
+    <h1>Картошки</h1>
+    <div>
+        {% for i in posts %}
+        <h1>{{i.title}}</h1>
+        <p>{{i.description}}</p>
+        <img src="{{i.image.url}}" alt="" width="500" height="350"/>
+        <h4>{{i.price}} сом</h4>
+        {% endfor %}
+    </div>
+</body>
+</html>
